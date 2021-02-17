@@ -1,7 +1,7 @@
 # RPA-TRM
-Automatización con RPA
-INSTRUCCIONES PARA CORRER EL RETO DE DESARROLLO RPA
-Esta automatización tiene como objetivo extraer información de la TRM del Euro y del Dólar de la página del Banco de la República para un rango de fechas específico. Este programa descarga archivos CSV con información de la TRM para el Euro y el Dólar. Posteriormente procesa los datos para obtener los promedios, el valor mayor y el valor menor de la TRM para cada moneda en cada año, para un rango de fechas escogido por el usuario. Finalmente envía un reporte por correo electrónico en un archivo de Excel.
+Automatización con RPA \n
+INSTRUCCIONES PARA CORRER EL RETO DE DESARROLLO RPA \n
+Esta automatización tiene como objetivo extraer información de la TRM del Euro y del Dólar de la página del Banco de la República para un rango de fechas específico. Este programa descarga archivos CSV con información de la TRM para el Euro y el Dólar. Posteriormente procesa los datos para obtener los promedios, el valor mayor y el valor menor de la TRM para cada moneda en cada año, para un rango de fechas escogido por el usuario. Finalmente envía un reporte por correo electrónico en un archivo de Excel. \n
 Requerimientos
 1.Necesita tener instalado Google Chrome en su máquina, tener configurada la opción del explorador para preguntar ruta de almacenamiento cada vez que se ejecuta una descarga y configurar la opción “al abrir” con “Abrir la página Nueva Pestaña”. 
 2.Este programa no acepta colas de trabajo.
