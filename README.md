@@ -1,28 +1,28 @@
 # RPA-TRM
-Automatización con RPA
-INSTRUCCIONES PARA CORRER EL RETO DE DESARROLLO RPA
-Esta automatización tiene como objetivo extraer información de la TRM del Euro y del Dólar de la página del Banco de la República para un rango de fechas específico. Este programa descarga archivos CSV con información de la TRM para el Euro y el Dólar. Posteriormente procesa los datos para obtener los promedios, el valor mayor y el valor menor de la TRM para cada moneda en cada año, para un rango de fechas escogido por el usuario. Finalmente envía un reporte por correo electrónico en un archivo de Excel.
-Requerimientos
-1.Necesita tener instalado Google Chrome en su máquina, tener configurada la opción del explorador para preguntar ruta de almacenamiento cada vez que se ejecuta una descarga y configurar la opción “al abrir” con “Abrir la página Nueva Pestaña”. 
-2.Este programa no acepta colas de trabajo.
-3.Se deben crear en la ruta C:\Users\<NombreUsuario>\Documents\<nombreRobot> los siguientes directorios:
-*Archivos recibidos: Donde se almacenarán los archivos descargados de la página.
-*Base: En esta carpeta se debe ubicar el archivo Config.xlsx
-*Logs: Se almacenará un archivo en Excel con los logs por día.
-*Trazabilidad: Se almacenará el archivo de salida que es enviado por correo electrónico.
+Automation with RPA
+INSTRUCTIONS TO RUN THE RPA DEVELOPMENT CHALLENGE
+This automation aims to extract Euro and Dollar TRM information from the Banco de la República website for a specific date range. This program downloads CSV files with information of the TRM for the Euro and the Dollar. It then processes the data to obtain the averages, the highest and the lowest values of the TRM for each currency in each year, for a date range chosen by the user. Finally, it sends a report by e-mail in an Excel file.
+Requirements
+1.You need to have Google Chrome installed on your machine, have the browser option configured to ask for storage path every time a download is executed and set the "on open" option to "Open New Tab Page". 
+2.This program does not accept work queues.
+3.The following directories must be created in the path C:\Users\<UserName>\Documents\<RobotName>
+*Received files: Where the files downloaded from the page will be stored.
+*Base: The Config.xlsx file should be placed in this folder.
+*Logs: An Excel file with the logs per day will be stored in this folder.
+*Traceability: The output file that is sent by e-mail will be stored in this folder.
 Assets
-Para correr esta automatización en su máquina se deben crear los siguientes Assets en el orquestador:
+To run this automation in your machine the following Assets must be created in the orchestrator:
 
 
-Nombre Asset	                         Descripción	                                       Valor
+Asset Name	                         Description	                                       Value
 BanrepURL		               URL para ingresar al sitio Banrep                 https://www.banrep.gov.co/estadisticas/trm
-credencialCorreo		Credenciales para enviar reporte                Usuario: Su correo deseado. Contraseña: La contraseña del correo.
-RutaBase	                    Nombre carpeta base	                                        Base
-RutaIn	                       Nombre carpeta archivos recibidos	                  Archivos Recibidos
-RutaLog	                          Nombre carpeta Logs	                                    Logs
-RutaOut	                      Nombre carpeta trazabilidad	                            Trazabilidad
-RutaParcialConfig	     Ruta especificada para acceder a la carpeta config      	\TRAY\Base\Config.xlsx
-RutaRaiz	                     Ruta base para las carpetas	                       C:\Users\{0}\Documents\
-BotName	                          Nombre del Robot                                        	TRAY
+credencialCorreo		                 Credentials                Usuario: e-mail. Contraseña: e-mail's password.
+RutaBase	                          Base folder	                                        Base
+RutaIn	                       Folder for received files	                      Archivos Recibidos
+RutaLog	                              Logs folder	                                    Logs
+RutaOut	                          Traceability folder                            Trazabilidad
+RutaParcialConfig	               Route for config folder     	                \TRAY\Base\Config.xlsx
+RutaRaiz	                       Route for the folders	                       C:\Users\{0}\Documents\
+BotName	                          Robot name                                        	TRAY
 
-Nota: Antes de correr el programa no olvide modificar los datos de su preferencia del archivo Config.xlsx, a excepción de la pestaña Assets, la cual no es necesaria modificar.
+Note: Before running the program, do not forget to modify the data of your choice in the Config.xlsx file, except for the Assets tab, which does not need to be modified.
